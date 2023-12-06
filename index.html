@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokoban Game - Christmas edition</title>
+    <link rel="icon" type="image/png" href="./images/box.png?">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/box.png">
+            <h1>SOKOBAN - CHRISTMAS EDITION</h1>
+            <img src="images/box.png">
+        </div>
+        <div class="main">
+            <div id="map"></div>
+            <div class="sidebar">
+                <div class="goalCounterBox">
+                    <h2 class="goals">GOALS</h2>
+                    <p id="goalCounter"></p>   
+                </div>
+                <div class="moveCounterBox">
+                    <h2 class="moves">MOVES</h2>
+                    <p id="moveCounter"></p>    
+                </div>
+                <button class="restart" onclick="createMap()">RESTART</button>
+                <div class="mapSelector">
+                    <p>SELECT MAP:</p>
+                    <select id="mapSelector" onchange="changeMap()">
+                        <option value="map01">Map 1</option>
+                        <option value="map02">Map 2</option>
+                        <option value="map03">Map 3</option>
+                        <option value="map04">Map 4</option>
+                        <option value="map05">Map 5</option>
+                        <option value="map06">Map 6</option>
+                        <option value="map07">Map 7</option>
+                        <option value="map08">Map 8</option>
+                        <option value="map09">Map 9</option>
+                        <option value="map10">Map 10</option>
+                        <option value="map11">Map 11</option>
+                        <option value="map12">Map 12</option>
+                        <option value="map13">Map 13</option>
+                        <option value="map14">Map 14</option>
+                        <option value="map15">Map 15</option>
+                        <option value="map16">Map 16</option>
+                        <option value="map17">Map 17</option>
+                        <option value="map18">Map 18</option>
+                        <option value="map19">Map 19</option>
+                        <option value="map20">Map 20</option>
+                        <option value="map21">Map 21</option>
+                        <option value="map22">Map 22</option>
+                        <option value="map23">Map 23</option>
+                        <option value="map24">Map 24</option>
+                        <option value="map25">Map 25</option>
+                        <option value="map26">Map 26</option>
+                        <option value="map27">Map 27</option>
+                        <option value="map28">Map 28</option>
+                        <option value="map29">Map 29</option>
+                        <option value="map30">Map 30</option>
+                    </select>    
+                </div>
+                <p class="instructions">
+                    Sokoban is japanese for 'warehouse keeper'.
+                    This puzzle game was originally invented in Japan in the early 80's. <br><br>
+                    Use WASD or arrow keys to move Santa and push the gifts to the babies with a minimum number of moves.
+                </p>
+                <a class="converterButton" href="mapConverter.html">MAP CONVERTER</a>
+
+            </div>
+            <div id="gameCompleteMessage">
+                <h2>Well done!</h2>
+                <h2>You completed the puzzle in</h2>
+                <h2 id="completedMoves"></h2>
+                <h2>moves!</h2>
+            </div>    
+        </div>
+        <div class="footer">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Jon Mendizabal</p>
+        </div>
+    </div>
+    <script src="SokobanBase.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/05049b2b78.js" crossorigin="anonymous"></script>
+</body>
+</html>
