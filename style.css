@@ -55,7 +55,7 @@ h2{
 }
 
 #map{
-    background: url(images/background.jpg);
+    background: #115e2e;
     background-size: contain;
     background-position: bottom;
     display: grid;
